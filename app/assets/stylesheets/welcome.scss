@@ -4,6 +4,9 @@
 
 
 
+
+
+
 .iframe-container{
     position: relative;
     width: 60%;
@@ -44,7 +47,52 @@ header {
   /* Add a left margin to the "page content" that matches the width of the sidenav (120px) */
   #main {margin-left: 120px}
   /* Remove margins from "page content" on small screens */
-  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  @media only screen and (max-width: 600px) {
+    #main {margin-left: 0px!important;}
+    .hello3img {width: 30%!important; margin: 20px!important;}
+    header {background-size: 100%;}
+    .lanpos {text-align: center;}
+    #map {position: relative;overflow: hidden;right: -30px;}
+
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
+#main {margin-left: 0px!important;}
+    .hello3img {width: 30%!important; margin: 20px!important;}
+    header {background-size: 100%;}
+    .lanpos {text-align: center;}
+    #map {position: relative;overflow: hidden;right: -30px;}
+    
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
+   #main {margin-left: 0px!important;}
+    .hello3img {width: 30%!important; margin: 20px!important;}
+    header {background-size: 100%;}
+    .lanpos {text-align: center;} 
+    #map {position: relative;overflow: hidden;right: -30px;}
+ 
+}
+
+
+@media only screen and (max-device-width: 480px) {
+ #main {margin-left: 0px!important;}
+    .hello3img {width: 30%!important; margin: 20px!important;}
+    header {background-size: 100%;}
+    .lanpos {text-align: center;}
+    #map {position: relative;overflow: hidden;right: -30px;}
+
+}
+
+@media only screen and (max-width: 360px ) {
+ #main {margin-left: 0px!important;}
+    .hello3img {width: 30%!important; margin: 20px!important;}
+    header {background-size: 100%;}
+    .lanpos {text-align: center;}
+    #map {position: relative;overflow: hidden;right: -30px;}
+}
 
 
 
