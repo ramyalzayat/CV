@@ -197,19 +197,25 @@
       <div class="pull-right iframe-container" id="map"></div>
 
       <script>
-        function myMap() {
-          var mapCanvas = document.getElementById("map");
-          var mapOptions = {
-            center: new google.maps.LatLng(52.481086, 13.427498),
-            zoom: 15
-          }
-          var map = new google.maps.Map(mapCanvas, mapOptions);
-        }
+function initMap() {
+        var uluru = {lat: -52.481086, lng: 13.427498};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+
       </script>
 
       <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyBzpjic8MihxhnJtWmGHKlmmRMVjcVxMdU"></script>
 
-
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzpjic8MihxhnJtWmGHKlmmRMVjcVxMdU&callback=initMap">
+    </script>
 
       <div class="w3-section">
         <p class="w3-hover-text-white"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Berlin, DE</p>
