@@ -226,7 +226,7 @@ body, h1,h2,h3,h4,h5,h6{font-family: "Montserrat", sans-serif}
    .w3-navbar li a:hover { color: #000; background-color: #ccc; }
    .w3-navbar a,.w3-sidenav a { text-decoration: none !important; }
    .w3-btn,.w3-hover-opacity-off,.w3-navbar a,.w3-sidenav a,.w3-hover-black,.w3-hover-grey,.w3-hover-text-light-blue,.w3-hover-text-green,.w3-hover-text-indigo,.w3-hover-text-red,.w3-hover-text-grey { transition: background-color 0.3s, color 0.15s, box-shadow 0.3s, opacity 0.3s, filter 0.3s; }
-   .w3-sidenav { background-color: black; z-index: 1; overflow: auto; position: fixed !important; }
+   .w3-sidenav { background-color: black; z-index: 1; overflow: auto; position: fixed !important; height: auto!important; }
    .w3-sidenav a { padding: 4px 2px 4px 16px; }
    .w3-sidenav a:hover { background-color: #ccc; }
    .w3-sidenav a { display: block; }
