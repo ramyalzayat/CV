@@ -302,21 +302,7 @@
           <hr style="width:200px" class="w3-opacity">
 
           <div class="pull-right iframe-container" id="map">
-
-          <script>
-            function myMap() {
-              var mapCanvas = document.getElementById("map");
-              var mapOptions = {
-                center: new google.maps.LatLng(52.481086, 13.427498),
-                zoom: 15
-              }
-              var map = new google.maps.Map(mapCanvas, mapOptions);
-            }
-
-          </script>
-
-          <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyCZksy0ZeqPjBDRB3bXnbOG-njqoq-yluc"></script>
-</div>
+        </div>
 
 
           <div class="w3-section">
@@ -363,6 +349,20 @@
           ga('send', 'pageview');
 
         </script>
+
+        <script>
+          function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+              center: new google.maps.LatLng(52.481086, 13.427498),
+              zoom: 15
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+          }
+
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyCZksy0ZeqPjBDRB3bXnbOG-njqoq-yluc"></script>
         <!-- END PAGE CONTENT -->
       </div>
     </div>
